@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="style.css">
+  <title>fCC Survey Form</title>
+</head>
+<body>
+  <div id="main-div">
+    <h1 id="title">freeCodeCamp<br>Survey Form</h1>
+    <p id="description">Filling out this form helps us improve our platform</p>
+    <form action="" id="survey-form">
+      <div id="name-div">      
+        <label for="name" id="name-label">Name</label>
+        <input type="text" id="name" name="name" required placeholder="Name here...">
+      </div>
+      <div id="email-div">      
+        <label for="email" id="email-label">Email</label>
+        <input type="email" id="email" name="email" required placeholder="Email...">
+      </div>
+      <div id="age-div">
+        <label for="number" id="number-label">Age<span>(Not Required)</span></label>
+        <input type="number" id="number" name="number" min="18" max="75" placeholder="Age...">
+      </div>
+      <p>Which Describes Your Skill Level</p>
+      <div id="radio-div">
+        <div>
+          <input type="radio" id="noob" name="skills" value="noob"
+         checked>
+          <label for="noob">N00B</label>
+        </div>
+        <div>
+          <input type="radio" id="intermediate" name="skills" value="intermediate">
+          <label for="intermediate">Intermediate</label>
+        </div>
+        <div>
+          <input type="radio" id="leet" name="skills" value="leet">
+          <label for="leet">L33T</label>
+        </div>
+      </div>
+      <div id="dropdown-div">
+        <label for="dropdown">Choose A Technology That Interests You</label>
+        <select name="dropdown" id="dropdown">
+          <option value="html5">HTML5</option>
+          <option value="css3">CSS3</option>
+          <option value="js">JavaScript</option>
+        </select>
+      </div>
+      <p>Are You Learning For</p>
+      <div id="checkbox-div">
+        <div>
+          <input type="checkbox" id="fun" name="fun" value="fun"
+         checked>
+  <label for="fun">Fun</label>
+        </div>
+        <div>
+          <input type="checkbox" id="work" name="work" value="work">
+  <label for="work">Work</label>
+        </div>
+      </div>
+      <div>
+        <label for="comments" class="label">Please Provide Any Additional Comments</label>
+        <textarea name="comments" id="comments" cols="40" rows="5">Comments...</textarea>
+      </div>
+      <button type="submit" id="submit">Submit</button>
+    </form>
+  </div>
+  <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</body>
+</html>
